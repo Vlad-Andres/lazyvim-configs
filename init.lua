@@ -1,7 +1,18 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+require("copilot").setup({})
+
+--------------- LSP configs --------------------------------
+-- require("lsp_lines").setup()
+
 require("lspconfig").pyright.setup({})
+vim.diagnostic.config({
+  virtual_text = false,
+})
+vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
+--------------- LSP configs --------------------------------
+
 require("nvim-treesitter.configs").setup({
   textobjects = {
     select = {
