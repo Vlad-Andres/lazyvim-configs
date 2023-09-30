@@ -2,7 +2,7 @@ return {
   -- { "mfussenegger/nvim-dap" },
   {
     "linux-cultist/venv-selector.nvim",
-    dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
+    dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
     opts = {
       -- Your options go here
       -- name = "venv",
